@@ -1,0 +1,122 @@
+.container {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 24px;
+}
+
+.titulo {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--verde-oscuro);
+  padding: 2px 0 4px;
+}
+
+.card {
+  background: var(--blanco);
+  border-radius: var(--radio);
+  padding: 16px;
+  box-shadow: var(--sombra);
+}
+
+.cardClima {
+  border-left: 4px solid #0284c7;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.cardIcono {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cardTitulo {
+  font-size: 14px;
+  font-weight: 700;
+  color: #111;
+  line-height: 1.2;
+}
+
+.cardSub {
+  font-size: 11.5px;
+  color: var(--gris);
+}
+
+.climaCargando {
+  font-size: 13px;
+  color: var(--gris);
+  font-style: italic;
+}
+
+.climaError {
+  font-size: 13px;
+  color: var(--cafe);
+}
+
+.climaDatos {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.climaTemp {
+  font-size: 32px;
+  font-weight: 700;
+  color: #0284c7;
+  line-height: 1;
+}
+
+.climaTxt {
+  font-size: 13px;
+  color: var(--gris);
+  line-height: 1.4;
+}
+
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.infoFila {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0;
+  border-bottom: 1px solid var(--gris-claro);
+}
+
+.infoFila:last-child {
+  border-bottom: none;
+}
+
+.infoEtiqueta {
+  font-size: 12.5px;
+  color: var(--gris);
+}
+
+.infoValor {
+  font-size: 13px;
+  font-weight: 600;
+  color: #111;
+}
+
+.clave {
+  background: var(--crema);
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-family: monospace;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}

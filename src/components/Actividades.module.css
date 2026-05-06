@@ -1,0 +1,160 @@
+.container {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-bottom: 24px;
+}
+
+.resumen {
+  display: flex;
+  gap: 10px;
+}
+
+.chip {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 7px 14px;
+  border-radius: 20px;
+  font-size: 12.5px;
+  font-weight: 600;
+}
+
+.instruccion {
+  font-size: 12.5px;
+  color: var(--gris);
+  text-align: center;
+}
+
+.lista {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--blanco);
+  border: 1.5px solid var(--gris-claro);
+  border-radius: var(--radio);
+  padding: 14px 16px;
+  text-align: left;
+  transition: border-color 0.2s, background 0.2s, transform 0.1s;
+  width: 100%;
+}
+
+.item:active {
+  transform: scale(0.98);
+}
+
+.itemHecha {
+  border-color: var(--verde-claro);
+  background: linear-gradient(135deg, #f0faf4, var(--blanco));
+}
+
+.itemInteresa {
+  border-color: var(--amarillo);
+  background: linear-gradient(135deg, #fffbeb, var(--blanco));
+}
+
+.emoji {
+  font-size: 26px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.itemTexto {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 2px;
+}
+
+.itemNombre {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111;
+  line-height: 1.3;
+}
+
+.itemDesc {
+  font-size: 11.5px;
+  color: var(--gris);
+  line-height: 1.3;
+}
+
+.badge {
+  flex-shrink: 0;
+}
+
+.badgeHecha {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: var(--verde);
+  color: #fff;
+  border-radius: 50%;
+}
+
+.badgeInteresa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: var(--amarillo);
+  color: #fff;
+  border-radius: 50%;
+}
+
+.badgeNinguno {
+  display: block;
+  width: 28px;
+  height: 28px;
+  border: 2px solid var(--gris-claro);
+  border-radius: 50%;
+}
+
+.leyenda {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding-top: 4px;
+}
+
+.leyendaItem {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11.5px;
+  color: var(--gris);
+}
+
+.dotVerde {
+  width: 10px;
+  height: 10px;
+  background: var(--verde);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dotAmarillo {
+  width: 10px;
+  height: 10px;
+  background: var(--amarillo);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dotGris {
+  width: 10px;
+  height: 10px;
+  border: 2px solid var(--gris-claro);
+  border-radius: 50%;
+  display: inline-block;
+}

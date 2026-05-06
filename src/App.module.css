@@ -1,0 +1,105 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  height: 100dvh;
+  background: var(--crema);
+}
+
+.header {
+  background: linear-gradient(135deg, var(--verde) 0%, var(--verde-oscuro) 100%);
+  padding: 14px 20px;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.headerInner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  font-size: 30px;
+  line-height: 1;
+}
+
+.headerTexto {
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo {
+  font-size: 17px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.2px;
+  line-height: 1.2;
+}
+
+.subtitulo {
+  font-size: 12px;
+  color: var(--verde-suave);
+  font-weight: 400;
+}
+
+.main {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  background: var(--blanco);
+  border-top: 1px solid var(--gris-claro);
+  flex-shrink: 0;
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+.navBtn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  padding: 10px 2px 8px;
+  background: transparent;
+  color: var(--gris);
+  transition: color 0.15s, background 0.15s;
+  position: relative;
+}
+
+.navBtn:active {
+  background: var(--verde-suave);
+}
+
+.activo {
+  color: var(--verde);
+}
+
+.activo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 25%;
+  right: 25%;
+  height: 2.5px;
+  background: var(--verde);
+  border-radius: 0 0 3px 3px;
+}
+
+.navLabel {
+  font-size: 9.5px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.activo .navLabel {
+  font-weight: 700;
+}

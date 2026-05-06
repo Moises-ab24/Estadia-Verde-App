@@ -1,0 +1,211 @@
+.container {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-bottom: 24px;
+}
+
+.banner {
+  background: linear-gradient(135deg, var(--verde) 0%, var(--verde-oscuro) 100%);
+  border-radius: var(--radio-grande);
+  padding: 28px 20px 22px;
+  text-align: center;
+}
+
+.bannerEmoji {
+  font-size: 44px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.bannerTitulo {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.bannerSub {
+  font-size: 12px;
+  color: var(--verde-suave);
+}
+
+.card {
+  background: var(--blanco);
+  border-radius: var(--radio);
+  padding: 18px;
+  box-shadow: var(--sombra);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.infoFila {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 0;
+}
+
+.infoEtiqueta {
+  font-size: 13px;
+  color: var(--gris);
+  flex: 1;
+}
+
+.infoValor {
+  font-size: 13px;
+  font-weight: 600;
+  color: #111;
+}
+
+.separador {
+  height: 1px;
+  background: var(--gris-claro);
+}
+
+.nochesChip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 14px;
+  background: var(--verde-suave);
+  color: var(--verde);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 7px 16px;
+  border-radius: 20px;
+  align-self: center;
+}
+
+.botonesRow {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.btnEditar {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: var(--verde-suave);
+  color: var(--verde);
+  padding: 11px;
+  border-radius: var(--radio-chico);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.btnSalir {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: var(--rojo-suave);
+  color: var(--rojo);
+  padding: 11px;
+  border-radius: var(--radio-chico);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1;
+  margin-bottom: 12px;
+}
+
+.camposFila {
+  display: flex;
+  gap: 10px;
+}
+
+.label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--gris);
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.input {
+  border: 1.5px solid var(--gris-claro);
+  border-radius: var(--radio-chico);
+  padding: 11px 13px;
+  font-size: 14px;
+  color: #111;
+  background: var(--crema);
+  width: 100%;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--verde);
+  background: var(--blanco);
+}
+
+.errorMsg {
+  font-size: 12px;
+  color: var(--rojo);
+  background: var(--rojo-suave);
+  padding: 8px 12px;
+  border-radius: var(--radio-chico);
+  margin-bottom: 4px;
+}
+
+.btnGuardar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: linear-gradient(135deg, var(--verde), var(--verde-oscuro));
+  color: #fff;
+  padding: 14px;
+  border-radius: var(--radio-chico);
+  font-size: 14px;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
+.btnGuardar:active {
+  opacity: 0.85;
+}
+
+.btnCancelar {
+  background: transparent;
+  color: var(--gris);
+  padding: 10px;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 2px;
+}
+
+.tips {
+  background: var(--verde-suave);
+  border-radius: var(--radio);
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.tipsTitle {
+  font-weight: 700;
+  color: var(--verde);
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.tips p {
+  font-size: 12.5px;
+  color: #1e4030;
+  line-height: 1.5;
+}
