@@ -71,7 +71,7 @@ function abrirWhatsApp(servicio: string) {
 }
 
 export default function Solicitudes() {
-  const [abiertos, setAbiertos] = useState<Record<string, boolean>>({ habitacion: true })
+  const [abiertos, setAbiertos] = useState<Record<string, boolean>>({})
 
   const toggle = (id: string) => {
     setAbiertos(prev => ({ ...prev, [id]: !prev[id] }))
@@ -81,7 +81,7 @@ export default function Solicitudes() {
 
   return (
     <div className={styles.container}>
-      <h2 className={styles.titulo}>Solicitudes al Staff</h2>
+      <h2 className={styles.titulo}>Solicitudes al Personal</h2>
 
       {!huesped && (
         <div className={styles.aviso}>
@@ -127,7 +127,7 @@ export default function Solicitudes() {
       </div>
 
       <p className={styles.nota}>
-        💬 Cada botón abre WhatsApp con un mensaje ya redactado al staff del hotel.
+        💬 Cada botón abre WhatsApp con un mensaje ya redactado al personal del hotel.
       </p>
     </div>
   )
