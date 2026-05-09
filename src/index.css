@@ -81,3 +81,14 @@ input {
   background: var(--verde-claro);
   border-radius: 3px;
 }
+
+* {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+input, textarea {
+  -webkit-user-select: text;
+  user-select: text;
+}

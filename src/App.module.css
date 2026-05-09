@@ -10,7 +10,7 @@
   background: linear-gradient(135deg, var(--verde) 0%, var(--verde-oscuro) 100%);
   padding: 14px 20px;
   flex-shrink: 0;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .headerInner {
@@ -45,12 +45,24 @@
 
 .main {
   flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.seccion {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   overflow-y: auto;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
-  max-width: 900px;
-  margin: 0 auto;
-  width: 100%;
+  display: none;
+}
+
+.seccionActiva {
+  display: block;
 }
 
 .navbar {

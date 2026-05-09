@@ -64,8 +64,6 @@ function verificarAcceso(): boolean {
 
 function App() {
   const [tieneAcceso] = useState(() => verificarAcceso())
-  if (!tieneAcceso) return <Acceso />
-
   const [pantalla, setPantalla] = useState<Pantalla>('registro')
   const [refreshKey, setRefreshKey] = useState(0)
 
@@ -74,6 +72,8 @@ function App() {
   const handleRegistroGuardado = () => {
     setRefreshKey(k => k + 1)
   }
+
+  if (!tieneAcceso) return <Acceso />
 
   return (
     <div className={styles.app}>
@@ -90,11 +90,21 @@ function App() {
       </header>
 
       <main className={styles.main}>
-        {pantalla === 'registro' && <Registro key={refreshKey} onGuardado={handleRegistroGuardado} />}
-        {pantalla === 'actividades' && <Actividades />}
-        {pantalla === 'info' && <InfoHotel />}
-        {pantalla === 'solicitudes' && <Solicitudes />}
-        {pantalla === 'mapa' && <Mapa />}
+        <div className={`${styles.seccion} ${pantalla === 'registro' ? styles.seccionActiva : ''}`}>
+          <Registro key={refreshKey} onGuardado={handleRegistroGuardado} />
+        </div>
+        <div className={`${styles.seccion} ${pantalla === 'actividades' ? styles.seccionActiva : ''}`}>
+          <Actividades />
+        </div>
+        <div className={`${styles.seccion} ${pantalla === 'info' ? styles.seccionActiva : ''}`}>
+          <InfoHotel />
+        </div>
+        <div className={`${styles.seccion} ${pantalla === 'solicitudes' ? styles.seccionActiva : ''}`}>
+          <Solicitudes />
+        </div>
+        <div className={`${styles.seccion} ${pantalla === 'mapa' ? styles.seccionActiva : ''}`}>
+          <Mapa />
+        </div>
       </main>
 
       <nav className={styles.navbar}>
