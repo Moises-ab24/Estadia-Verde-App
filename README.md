@@ -4,7 +4,7 @@
 
 Estadía Verde es una aplicación web progresiva (PWA) diseñada para mejorar la experiencia de los huéspedes del hotel. Permite registrar la estadía, explorar actividades, consultar información del hotel, realizar solicitudes al staff y navegar el mapa de las instalaciones — todo desde el celular, sin necesidad de descargar ninguna app.
 
-El acceso está restringido mediante un código QR exclusivo entregado en recepción.
+El acceso está restringido mediante un código QR exclusivo que se entregaria en recepción.
 Ya disponible en 
 (https://estadia-verde.vercel.app/)
 
@@ -24,7 +24,7 @@ La app valida un código QR único entregado en recepción. Una vez escaneado, e
 ### Clima en tiempo real
 La pantalla de Info consume la API de Open-Meteo para mostrar la temperatura actual en Monteverde sin costo ni autenticación.
 
-### Solicitudes al staff
+### Solicitudes al personal
 Cada solicitud genera un mensaje prearmado en WhatsApp con el nombre y número de habitación del huésped, listo para enviar con un solo toque.
 
 ### Instalable como PWA
@@ -57,7 +57,7 @@ Al acceder desde el navegador del celular, la app se puede instalar directamente
    ↓
 🗺️ Explora actividades, info del hotel y mapa
    ↓
-💬 Solicita algo al staff
+💬 Solicita algo al personal
    ↓
 📲 WhatsApp abre con mensaje prearmado
    ↓
