@@ -11,6 +11,7 @@ Ya disponible en
 ## 📸 Screenshots
 
 <p align="center">
+  <img src="https://github.com/user-attachments/assets/adbc1a48-ac06-4cfc-989d-ff356840dc48" width="165" height="350"/>
   <img src="https://github.com/user-attachments/assets/52a646e7-1bad-4e5d-8377-bcb6dcb195f8" width="165" height="350"/>
   <img src="https://github.com/user-attachments/assets/1bf7a6b4-eead-4e26-9498-fcccae5f675a" width="165" height="350"/>
   <img src="https://github.com/user-attachments/assets/5fa94ba0-a8e5-4950-8cce-154e8fa95f98" width="165" height="350"/>
